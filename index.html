@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/right.css" />
+    <link rel="stylesheet" href="css/left.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="hamburgarcon">
+          <img src="icon/logo.png" alt="logo" />
+          <div><img id="hamburgar" src="icon/hamburgar.svg" alt=""></div>
+          <div class="search"><img src="icon/search.svg" alt=""></div>
+        </div>
+        <div class="mid">
+          <img
+            src="https://img.icons8.com/m_sharp/512/FFFFFF/home.png"alt=""/>
+          <input type="text" placeholder="What do you want to play ?" />
+        </div>
+        <div class="last">
+          <button>sign up</button>
+          <button>Log in</button>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <aside class="left">
+        <div class="left-top">
+          <div>
+            <img class="invert" src="icon/library.svg" alt="" />
+          </div>
+          <div><h3>Your Library</h3></div>
+        </div>
+        <div class="songlist">
+          <ul></ul>
+        </div>
+
+        <div class="left-bottom">
+          <a href="">Legal</a>
+          <a href="">Sefty&privscy center</a>
+          <a href="">Privscy policy</a>
+          <a href="">Cookies</a>
+          <a href="">Aboute Ads</a>
+          <a href="">accessibility</a>
+        </div>
+      </aside>
+
+      <aside class="right">
+        <div class="right-top">
+          <h1 class="h1">Spotify playlist</h1>
+        </div>
+        <div class="right-mid">
+          <div class="cardcon"> </div>
+        </div>
+        <div class="playbar">
+          <div class="top-playbar">
+            <div class="song-info"></div>
+            <div class="playpause">
+              <span><img id="previous" src="icon/previous.svg" alt="" /></span>
+              <span><img id="play" src="icon/play.svg" alt="" /></span>
+              <span><img id="next" src="icon/next.svg" alt="" /></span>
+            </div>
+            <div class="timevol">
+              <div class="song-time"></div>
+              <div class="volume">
+             <img class="invert" src="icon/volume.svg" alt="">
+             <span class="range"><input type="range"></span>
+            </div>
+            </div>
+          </div>
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

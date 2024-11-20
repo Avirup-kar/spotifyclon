@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,590;1,590&family=Poppins:ital,wght@0,400;1,600&display=swap");
+html {
+  position: relative;
+}
+.right {
+  background-color: #1f1f1f;
+  height: 88.5vh;
+  width: 74vw;
+  border-radius: 10px;
+}
+
+.right-top {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 175px;
+}
+.h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.right-mid {
+  background-color: #181717;
+  border-radius: 10px;
+  height: 61vh;
+  width: 73vw;
+  margin: auto;
+  overflow: auto;
+}
+.cardcon {
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.playbar {
+  background-color: #181717;
+  border-radius: 10px;
+  height: 15vh;
+  width: 73vw;
+  margin: 8.5px auto;
+  position: fixed;
+  bottom: 1px;
+  position: relative;
+}
+.playpause {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  gap: 30px;
+}
+#previous {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+#play {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+#next {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+.seekbar {
+  background-color: white;
+  cursor: pointer;
+  height: 4px;
+  width: 70vw;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 20px;
+  position: relative;
+}
+.circle {
+  background-color: rgb(223, 99, 99);
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  transition: left ease-in-out 0.5s;
+}
+.top-playbar {
+  display: flex;
+  width: 72vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song-info,
+.song-time {
+  font-size: 15px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+.song-info {
+  width: 250px;
+}
+.song-time {
+  width: 100px;
+}
+.timevol {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.volume img {
+  cursor: pointer;
+}
+.volume .range input {
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .right {
+    background-color: #1f1f1f;
+    height: 90vh;
+    width: 98vw;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .cardcon {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .playpause {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    gap: 30px;
+  }
+  .right-top {
+    margin-top: 15px;
+    margin-left: 40px;
+    width: 175px;
+  }
+  .h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .right-mid {
+    background-color: #181717;
+    border-radius: 10px;
+    height: 67vh;
+    width: 95vw;
+    margin: auto;
+    overflow: auto;
+  }
+  .playbar {
+    background-color: #181717;
+    border-radius: 10px;
+    height: 14vh;
+    width: 95vw;
+    margin: 25.5px 1.5vw;
+    position: fixed;
+    bottom: 5px;
+  }
+  .top-playbar {
+    padding: 15px;
+    display: flex;
+    width: 92vw;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seekbar {
+    background-color: white;
+    cursor: pointer;
+    height: 4px;
+    width: 85vw;
+    margin: auto;
+    top: -11px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .song-info,
+  .song-time {
+    font-size: 10px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 150;
+  }
+  .song-info {
+    width: 250px;
+  }
+  .song-time {
+    margin-left: 30px;
+  }
+  .volume {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -15px;
+    left: 65vw;
+  }
+  .volume img {
+    cursor: pointer;
+    height: 17px;
+    width: 17px;
+  }
+  .volume .range input {
+    cursor: pointer;
+    width: 65px;
+    height: 3px;
+    /* rotate: 90deg; */
+  }
+  #previous {
+    cursor: pointer;
+    height: 17px;
+    width: 17px;
+  }
+  #play {
+    height: 17px;
+    width: 17px;
+    cursor: pointer;
+  }
+  #next {
+    cursor: pointer;
+    height: 17px;
+    width: 17px;
+  }
+}
+@media (max-width: 530px) {
+  .right {
+    background-color: #1f1f1f;
+    height: 90vh;
+    width: 98vw;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .playbar {
+    background-color: #181717;
+    border-radius: 10px;
+    height: 16vh;
+    width: 95vw;
+    margin: -5.5px 1vw;
+    bottom: 30px;
+    position: fixed;
+  }
+  .song-info,
+  .song-time {
+    font-size: 8px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 150;
+  }
+  .right-mid {
+    background-color: #181717;
+    border-radius: 10px;
+    height: 66vh;
+    width: 95vw;
+    margin: 0px auto;
+    overflow: auto;
+  }
+  .song-info {
+    width: 150px;
+  }
+}
+.card {
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: rgb(29 30 30);
+  width: 180px;
+  border-radius: 10px;
+  height: 255px;
+  position: relative;
+  &:hover {
+    background-color: #302f2f;
+  }
+}
+
+.happy {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: white;
+  margin-left: 11px;
+}
+.hits {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 150;
+  color: #9d9898;
+  margin-left: 11px;
+}
+.card img {
+  width: 160px;
+  border-radius: 10px;
+  height: 170px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.play2 {
+  top: 155px;
+  left: 125px;
+  background-color: rgb(80, 222, 80);
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.card:hover {
+  .play2 {
+    top: 135px;
+    left: 125px;
+    background-color: rgb(80, 222, 80);
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    position: absolute;
+    opacity: 1;
+  }
+}
+@media (max-width: 450px) {
+  .card {
+    margin-top: 30px;
+    margin-right: 20px;
+    background-color: rgb(29 30 30);
+    width: 80vw;
+    border-radius: 10px;
+    height: 365px;
+    position: relative;
+    &:hover {
+      margin-top: 30px;
+      background-color: rgb(44, 45, 45);
+      width: 73vw;
+      border-radius: 10px;
+    }
+  }
+  .right {
+    background-color: #1f1f1f;
+    height: 90vh;
+    width: 90vw;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .right-mid {
+    background-color: #181717;
+    border-radius: 10px;
+    height: 68vh;
+    width: 85vw;
+    margin: auto;
+    overflow: auto;
+  }
+
+  .playbar {
+    background-color: #181717;
+    border-radius: 10px;
+    height: 13vh;
+    width: 90vw;
+    margin: 8.5px auto;
+    position: fixed;
+    bottom: 15px;
+  }
+  .happy {
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    color: white;
+    margin-left: 11px;
+  }
+  .hits {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 150;
+    color: #9d9898;
+    margin-left: 11px;
+  }
+  .card img {
+    width: 68vw;
+    border-radius: 10px;
+    height: 290px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .play2 {
+    top: 300px;
+    left: 225px;
+  }
+  .card:hover {
+    .play2 {
+      top: 200px;
+      left: 225px;
+      background-color: rgb(80, 222, 80);
+      width: 25px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      position: absolute;
+      opacity: 1;
+    }
+  }
+  .volume img {
+    position: absolute;
+    left: 40px;
+    top: 0px;
+  }
+  .volume .range input {
+    cursor: pointer;
+    width: 50px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: -10px;
+    left: 40px;
+  }
+}
+@media (max-width: 380px) {
+  .play2 {
+    top: 300px;
+    left: 200px;
+  }
+  .playbar {
+    height: 16vh;
+  }
+  .volume .range input {
+    cursor: pointer;
+    width: 50px;
+    height: 3px;
+    /* rotate: 90deg; */
+  }
+  .volume img {
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+  }
+  .card:hover {
+    .play2 {
+      top: 190px;
+      left: 190px;
+      background-color: rgb(80, 222, 80);
+      width: 25px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      position: absolute;
+      opacity: 1;
+    }
+  }
+  .card img {
+    width: 68vw;
+    border-radius: 10px;
+    height: 290px;
+    margin-left: 7px;
+    margin-top: 10px;
+  }
+}
